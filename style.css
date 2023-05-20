@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+
+    min-height: 100vh;
+    width:100% ;
+    background-image: linear-gradient(rgba(4,9,30,0.77),rgba(4,9,30,0.7)),url(https://p4.wallpaperbetter.com/wallpaper/7/382/351/gears-mechanical-reflection-steampunk-wallpaper-preview.jpg);
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding:2% 5% ;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img {
+    width: 150px;
+    
+}
+.nav-links{
+    flex: ;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 11px;
+    position: relative ;  
+
+}
+.nav-links ul li a {
+    color:#FFFFFF ;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1 {
+    font-size: 63px;
+}
+.textbox p{
+    margin: 10 px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 12 px 35 px ;
+    font-size: 13 px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+@media(max-width: 700 px){
+    .textbox h1 {
+        font-size: 20px;    
+
+}
+.nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    right: 0;
+    top: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+
+
+
